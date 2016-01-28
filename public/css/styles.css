@@ -1,0 +1,84 @@
+/* universal */
+
+body {
+	font-size: 1em; 
+}
+
+input {
+	width: 100%;
+	padding: 0.7em 0.5em;
+}
+
+/* wrappers and containers */
+
+.wrapper {
+	width: 70em;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+/* form */
+
+#add-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 3em 0;
+	padding: 3em 1.5em;
+	border: thin solid #BBB;
+}
+
+#add-form > .field {
+	flex: 0 0 80%;
+}
+
+#add-form > .button {
+	flex: 0 0 15%;
+}
+
+#add-form > .button > #submit {
+
+	background-color: #0099ff;
+	border: thin solid #CCC;
+	color: #FFF;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+}
+
+/* list view */
+
+#list-view {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 3em 0;
+	padding: 3em 1.5em;
+	border: thin solid #BBB;
+}
+
+#list-view > .task-item {
+
+	flex: 0 0 80%;
+	border-bottom: thin solid #BBB;
+}
+
+#list-view > .task-delete {
+	flex: 0 0 15%;
+}
+
+#list-view > .task-item > p {
+
+	margin: 0.8em 0.3em;
+}
+
+#list-view > .task-delete a{
+	display: inline-block;
+	margin: 0.8em 0.3em;
+	color: red;
+
+}
